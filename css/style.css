@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  line-height: 27px;
+  background-color: #ccc;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: 40px auto;
+}
+
+#main-content,
+#sidebar {
+  width: 500px;
+  padding: 30px;
+}
+
+#main-content {
+  float: left;
+  background: #fff;
+}
+
+#sidebar {
+  float: right;
+  background: #eee;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #333;
+  }
+  .wrapper {
+    width: 600px;
+    padding: 20px;
+  }
+  #main-content {
+    float: none;
+   
+  /* Visual */
+    background: green;
+  }
+  #sidebar {
+    margin-top: 10px;
+    float: none;
+    background: green;
+  }
+  
+  p::first-line {
+    color: white;
+    font-variant: small-caps;
+  }
+
+  @mediq screen and (max-width: 600px) {
+      width:100%
+  }
